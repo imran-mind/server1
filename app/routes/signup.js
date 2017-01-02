@@ -97,7 +97,8 @@ function doLogin(req, res) {
                     "toAdd": user.toAdd ? user.toAdd : "",
                     "fromTime": user.fromTime ? user.fromTime : "",
                     "toTime": user.toTime ? user.toTime : "",
-                    "isEveryday": user.isEveryday ? user.isEveryday : true
+                    "isEveryday": user.isEveryday ? user.isEveryday : true,
+                    "isMobileVisible": user.isMobileVisible ? user.isMobileVisible : '-'
                 }
                 return res.status(200).json(jsonUser);
             }
