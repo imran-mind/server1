@@ -11,6 +11,14 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.TEXT,
             field: 'name'
         },
+        isMobileVisible: {
+            type: DataTypes.TEXT,
+            field: 'is_mobile_visible'
+        },
+        travelDate: {
+            type: DataTypes.BIGINT,
+            field: 'travel_date'
+        },
         phone: {
             type: DataTypes.TEXT,
             field: 'phone',
@@ -40,6 +48,10 @@ module.exports = function (sequelize, DataTypes) {
         toAdd: {
             type: DataTypes.TEXT,
             field: 'to_add'
+        },
+        estimatedFare: {
+            type: DataTypes.TEXT,
+            field: 'estimated_fare'
         },
         fromTime: {
             type: DataTypes.TEXT,

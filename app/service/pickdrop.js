@@ -30,8 +30,10 @@ function addPickDrop(input, id, cb) {
         name: input.name,
         fromAdd: input.fromAdd,
         toAdd: input.toAdd,
+        estimatedFare: input.estimatedFare,
         fromTime: input.fromTime,
         toTime: input.toTime,
+        travelDate: input.travelDate,
         isEveryday: input.isEveryday
     };
     pickdropDao.addPickDrop(payload, condition, function (err, result) {
@@ -64,6 +66,8 @@ function getPickDrops(condition, cb) {
                     "imagePath": user.imagePath ? user.imagePath : "",
                     "fromAdd": user.fromAdd ? user.fromAdd : "",
                     "toAdd": user.toAdd ? user.toAdd : "",
+                    "travelDate": user.travelDate ? user.travelDate : "",
+                    "estimatedFare": user.estimatedFare ? user.estimatedFare : "",
                     "fromTime": user.fromTime ? user.fromTime : "",
                     "toTime": user.toTime ? user.toTime : "",
                     "isEveryday": user.isEveryday ? user.isEveryday : ""

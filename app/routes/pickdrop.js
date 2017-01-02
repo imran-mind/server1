@@ -92,7 +92,7 @@ function getPickDropById(req, res) {
     var condition = {
         where: {id: id},
         attributes: ['id', 'name', 'phone', 'email', 'imagePath', 'fromAdd', 'toAdd',
-            'fromTime', 'toTime', 'isEveryday']
+            'fromTime', 'toTime', 'isEveryday', 'isMobileVisible', 'travelDate', 'estimatedFare']
     };
     pickdropService.getPickDropById(condition, function (err, result) {
         if (err) {

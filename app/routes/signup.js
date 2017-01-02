@@ -25,6 +25,7 @@ function doSignup(req, res) {
         "createdAt": moment().unix(),
         "updatedAt": moment().unix()
     };
+    console.log(JSON.stringify(payload));
     var condition = {
         where: {phone: input.phone}
     }
